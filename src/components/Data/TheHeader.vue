@@ -1,7 +1,7 @@
 <template>
-  <base-card>
+  <div class="base-card">
   <h1 class="title">{{heading}} </h1>
-  </base-card>
+  </div>
 </template>
 
 <script>
@@ -19,6 +19,14 @@ export default {
 
 <style scoped>
 .title {
-    color: #360032;
+    color: #D7402B;
+}
+.base-card {
+   margin: auto;
+  max-width: auto;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  
 }
 </style>

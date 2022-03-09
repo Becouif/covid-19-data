@@ -1,15 +1,36 @@
 <template>
   <the-header> </the-header>
-  <covid-data></covid-data>
+  <ul>
+    <covid-data></covid-data>
+  </ul>
 </template>
 
 <script>
 import TheHeader from "./components/Data/TheHeader.vue";
-import CovidData from './components/Data/CovidData.vue';
+import CovidData from "./components/Data/CovidData.vue";
 export default {
   components: {
     TheHeader,
-    CovidData
+    CovidData,
   },
 };
 </script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+</style>
