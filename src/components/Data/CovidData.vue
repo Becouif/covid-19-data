@@ -4,7 +4,7 @@
       <base-button @click="loadData">Click Here to load Data</base-button>
     </div>
 
-    <p v-if="isLoading" class="loading">Loading...</p>
+    <p v-if="isLoading" class="loading">Loading <i class="fas fa-spinner"></i></p>
     <div v-else>
       <li v-for="result in results" :key="result.id">
         <p class="loading">

@@ -1,6 +1,6 @@
 <template>
   <div class="base-card">
-  <h1 class="title">{{heading}} </h1>
+  <h1 class="title"> <span class="virus"><i class="fas fa-viruses"></i></span> {{heading}} </h1>
   </div>
 </template>
 
@@ -28,5 +28,8 @@ export default {
   border-radius: 12px;
   text-align: center;
   
+}
+.virus{
+  color: rgb(205,91,69);
 }
 </style>
