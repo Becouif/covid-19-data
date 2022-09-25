@@ -8,16 +8,16 @@
 button {
   font: inherit;
   border: 1px solid #360032;
-  background-color: #D7402B;
-  color: white;
+  background-color: #003111;
+  color: #eee;
   padding: 0.5rem 2rem;
   cursor: pointer;
 }
 
 button:hover,
 button:active {
-  background-color: white;
-  border-color: #D7402B;
-  color:#D7402B
+  background-color: #eee;
+  border-color: black;
+  color: black;
 }
 </style>
