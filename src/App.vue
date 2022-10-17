@@ -1,5 +1,4 @@
 <template>
-<the-translate></the-translate>
   <the-header> </the-header>
   <ul>
     <covid-data></covid-data>
@@ -7,14 +6,14 @@
 </template>
 
 <script>
-import TheHeader from "./components/Data/TheHeader.vue";
-import CovidData from "./components/Data/CovidData.vue";
-import TheTranslate from "./components/translate/TheTranslate.vue";
+import TheHeader from './components/Data/TheHeader.vue';
+import CovidData from './components/Data/CovidData.vue';
+import '@/assets/main.css';
+
 export default {
   components: {
     TheHeader,
     CovidData,
-    TheTranslate
   },
 };
 </script>

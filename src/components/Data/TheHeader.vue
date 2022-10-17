@@ -10,7 +10,7 @@
 export default {
   data() {
     return {
-      heading: 'Ukraine Covid-19 Data',
+      heading: 'Covid-19 Data',
     };
   },
   methods: {},

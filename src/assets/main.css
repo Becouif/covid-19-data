@@ -1,5 +1,8 @@
-#body {
+* {
   background: linear-gradient(#333, #333);
   /* background-repeat: no-repeat; */
   /* background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%); */
+}
+.bar {
+  color: azure;
 }
