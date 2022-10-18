@@ -5,12 +5,12 @@
     </div>
     <div></div>
     <p v-if="isLoading" class="loading">
-      Loading <i class="fas fa-spinner"></i>
+      <BaseSpinner></BaseSpinner>
     </p>
     <div v-else>
-      <li v-for="result in results" :key="result.id">
-        <div class="loading cards">
-          <div class="card">
+      <li v-for="result in results" :key="result.id" class="columns">
+        <div class="loading">
+          <div class="card column">
             <p>
               <span class="boldfont">City: </span>{{ result.countryname }}
               <br />
@@ -43,7 +43,12 @@
 </template>
 
 <script>
+import BaseSpinner from '../UI/BaseSpinnerLoader.vue';
+
 export default {
+  components: {
+    BaseSpinner,
+  },
   data() {
     return {
       results: [],
@@ -97,6 +102,11 @@ p {
   text-align: center;
   margin: 2rem auto;
   color: #eee;
+}
+#cardgrid {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1r 2r;
 }
 .cards {
   color: #eee;
